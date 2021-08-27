@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    site:
+      build:
+        context: .
+      ports:
+        - 5123:80
+    program:
+      build:
+        context: .
+        dockerfile: program.Dockerfile
